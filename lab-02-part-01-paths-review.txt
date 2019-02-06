@@ -12,14 +12,14 @@ Feel free to use your workstation to test your answers to the questions that don
 ==========
 ==========
 1. Write the command that you would use to change to the root directory.
-cd
+cd /
 
 
 
 ==========
 2. Write the command that you would use to change to your home directory.
 
-cd ~/
+cd ~
 
 
 ==========
@@ -60,7 +60,6 @@ ls
 ==========
 9. If you're in your root directory, how would you create a new directory on your desktop called more-stuff without changing your directory?  Write your command below.
 mkdir /users/students/desktop/more-stuff
-ls
 
 
 
