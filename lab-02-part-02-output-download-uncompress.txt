@@ -17,7 +17,8 @@ We're going to be echoing stuff to the console and cleaning it up.
 $ echo hello
 
 Copy and paste the output below.
-----------
+ent-v314-015:~ student$ echo hello
+hello
 
 
 
@@ -27,7 +28,8 @@ Copy and paste the output below.
 $ echo hello there
 
 Copy and paste the output below.
-----------
+ent-v314-015:~ student$ echo hello
+hello there
 
 
 
@@ -37,7 +39,8 @@ Copy and paste the output below.
 $ echo good mornin'
 
 Copy and paste the output below.
-----------
+ent-v314-015:~ student$ echo good mornin'
+>
 
 
 
@@ -45,7 +48,7 @@ Copy and paste the output below.
 4. Uh-oh... we're stuck!
 
 Type [CTRL + C] to get your prompt back.
-----------
+ent-v314-015:~ student$ 
 
 
 
@@ -55,8 +58,8 @@ Type [CTRL + C] to get your prompt back.
 $ echo "good mornin'"
 
 Copy and paste the output below.
-----------
-
+ent-v314-015:~ student$ echo "good mornin"
+good mornin
 
 
 ==========
@@ -65,7 +68,7 @@ Copy and paste the output below.
 $ echo *
 
 What happens?
-----------
+list everything
 
 
 
@@ -73,7 +76,7 @@ What happens?
 7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
 
 Write the command that you used below:
-----------
+clear
 
 
 
@@ -86,7 +89,13 @@ We're going to practice downloading files from a web site.  We'll use this pract
 $ curl google.com
 
 Copy and paste the output below.
-----------
+ent-v314-015:~ student$ curl google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 
@@ -96,7 +105,9 @@ Copy and paste the output below.
 $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
-----------
+ent-v314-015:~ student$ curl google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE>
 
 
 
@@ -104,15 +115,21 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 10. That's great, but what if I want to save the file?  What flag/option and option argument would I use to download the page to a file called google.html?  Run it to download the URL www.google.com.
 
 Write the command you used below.  Also copy and paste the output below.
-----------
-
+ent-v314-015:~ student$ curl -o google.html www.google.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11290    0 11290    0     0   112k      0 --:--:-- --:--:-- --:--:--  112k
 
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
-----------
+pwd
+ent-v314-015:~ student$ curl -o lab.txt https://github.com/entertainmenttechnology/lab_02_commandline_02
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 61725    0 61725    0     0   137k      0 --:--:-- --:--:-- --:--:--  137k
 
 
 
@@ -120,7 +137,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 12. If you're not in your home directory, change to it (use the shortcut).
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
-----------
+
 
 
 
@@ -136,15 +153,17 @@ REMEMBER to use the -o flag, and follow it with a .zip extension!
 Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
-----------
-
+ent-v314-015:~ student$ curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   178  100   178    0     0   6137      0 --:--:-- --:--:-- --:--:--  6357
 
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
-----------
+unzip 
 
 
 
@@ -245,7 +264,7 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 ==========
 24. Go back to your home directory
 [No output]
-----------
+
 
 
 
